@@ -1,0 +1,327 @@
+:root {
+    --bg: #ffffff;
+    --bg-soft: #f7f5f1;
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --muted: #8a8a8a;
+    --line: #ececec;
+    --accent: #c08457;
+    --accent-dark: #8a5a36;
+    --radius: 14px;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.2px;
+}
+
+.brand-mark {
+    color: var(--accent);
+    font-size: 0.7em;
+    transform: translateY(-1px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    padding: 120px 0 140px;
+    background:
+        radial-gradient(1200px 500px at 80% -20%, rgba(192, 132, 87, 0.10), transparent 60%),
+        radial-gradient(900px 400px at 10% 110%, rgba(192, 132, 87, 0.06), transparent 60%),
+        var(--bg);
+}
+
+.hero-inner {
+    max-width: 760px;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    max-width: 580px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+}
+
+/* ---------- Button ---------- */
+.btn {
+    display: inline-block;
+    padding: 14px 34px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 999px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+}
+
+.btn-primary {
+    background: var(--ink);
+    color: #fff;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(192, 132, 87, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Menu Section ---------- */
+.menu {
+    padding: 100px 0;
+    background: var(--bg-soft);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+}
+
+.section-sub {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.menu-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(192, 132, 87, 0.4);
+}
+
+.menu-card-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.menu-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.price {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.05rem;
+    white-space: nowrap;
+}
+
+.menu-card p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    padding: 56px 0;
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ink);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-meta {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+}
+
+.footer-copy {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 90px 0 100px;
+    }
+
+    .menu {
+        padding: 72px 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav-inner {
+        height: 64px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 13px 28px;
+    }
+
+    .menu-card {
+        padding: 26px 22px;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-links {
+        gap: 14px;
+    }
+}
