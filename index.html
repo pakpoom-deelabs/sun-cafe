@@ -1,90 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midnight Brew — Artisan Coffee</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Cafe — Brewed with Sunshine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="navbar">
-        <div class="container nav-inner">
-            <a href="#" class="brand">
-                <span class="brand-mark">●</span>
-                Midnight Brew
-            </a>
-            <nav class="nav-links">
-                <a href="#hero">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#footer">Contact</a>
-            </nav>
-        </div>
+      <div class="container nav-inner">
+        <a href="#" class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Sun Cafe
+        </a>
+        <nav class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#footer">Visit</a>
+        </nav>
+      </div>
     </header>
 
     <section id="hero" class="hero">
-        <div class="container hero-inner">
-            <p class="eyebrow">Established 2014</p>
-            <h1 class="hero-title">Coffee crafted for the quiet hours.</h1>
-            <p class="hero-subtitle">
-                Single-origin beans, slow-poured by hand. Whether it's first light
-                or last call, we brew something worth slowing down for.
-            </p>
-            <a href="#menu" class="btn btn-primary">View Menu</a>
+      <div class="container hero-inner">
+        <p class="eyebrow">Open since sunrise · Est. 2018</p>
+        <h1 class="hero-title">A little sunshine, in every cup.</h1>
+        <p class="hero-subtitle">
+          Bright single-origin beans, fresh-baked pastries, and a sunlit patio
+          to make your mornings feel a little warmer.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">See the Menu</a>
+          <a href="#about" class="btn btn-ghost">Our Story</a>
         </div>
+      </div>
+      <div class="hero-sun" aria-hidden="true"></div>
     </section>
 
     <section id="menu" class="menu">
-        <div class="container">
-            <header class="section-header">
-                <p class="eyebrow">Our Menu</p>
-                <h2>House Favorites</h2>
-                <p class="section-sub">Three classics, done right.</p>
-            </header>
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Today's Menu</p>
+          <h2>House Favorites</h2>
+          <p class="section-sub">Six bright picks, brewed daily.</p>
+        </header>
 
-            <div class="menu-grid">
-                <article class="menu-card">
-                    <div class="menu-card-top">
-                        <h3>Espresso</h3>
-                        <span class="price">$3.50</span>
-                    </div>
-                    <p>A short, bold pull of our signature dark roast — rich crema and a clean finish.</p>
-                </article>
-
-                <article class="menu-card">
-                    <div class="menu-card-top">
-                        <h3>Americano</h3>
-                        <span class="price">$4.00</span>
-                    </div>
-                    <p>Two shots of espresso lengthened with hot water for a smooth, balanced cup.</p>
-                </article>
-
-                <article class="menu-card">
-                    <div class="menu-card-top">
-                        <h3>Caramel Macchiato</h3>
-                        <span class="price">$5.25</span>
-                    </div>
-                    <p>Steamed milk, espresso, and house-made caramel — layered, never stirred.</p>
-                </article>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-top">
+              <h3>Sunrise Latte</h3>
+              <span class="price">$5.25</span>
             </div>
+            <p>
+              Honey, orange zest, and double espresso layered over silky steamed
+              milk.
+            </p>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-top">
+              <h3>Golden Cold Brew</h3>
+              <span class="price">$4.75</span>
+            </div>
+            <p>
+              Slow-steeped 18 hours, finished with a splash of turmeric vanilla
+              cream.
+            </p>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-top">
+              <h3>Classic Espresso</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>
+              A short, bold pull of our signature roast — rich crema and a clean
+              finish.
+            </p>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-top">
+              <h3>Matcha Sunbeam</h3>
+              <span class="price">$5.50</span>
+            </div>
+            <p>
+              Ceremonial-grade matcha whisked with oat milk and a touch of
+              wildflower honey.
+            </p>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-top">
+              <h3>Citrus Croissant</h3>
+              <span class="price">$4.25</span>
+            </div>
+            <p>
+              Buttery layers brushed with lemon glaze — baked in-house every
+              morning.
+            </p>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-top">
+              <h3>Honey Oat Cookie</h3>
+              <span class="price">$3.00</span>
+            </div>
+            <p>
+              Chewy, golden, and just sweet enough — best paired with a cold
+              brew.
+            </p>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-copy">
+          <p class="eyebrow">Our Story</p>
+          <h2>Brewed with sunshine, served with care.</h2>
+          <p>
+            Sun Cafe started as a tiny window on a corner where the morning
+            light hit just right. Today, we still chase that same feeling: a
+            quiet pause, a warm cup, and a moment that's entirely yours.
+          </p>
+          <p>
+            We source beans from small farms, bake our pastries fresh each day,
+            and keep the patio open from first light to golden hour.
+          </p>
+        </div>
+        <ul class="about-stats">
+          <li>
+            <span class="stat-num">7am</span>
+            <span class="stat-label">Doors open daily</span>
+          </li>
+          <li>
+            <span class="stat-num">12+</span>
+            <span class="stat-label">Single-origin beans</span>
+          </li>
+          <li>
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Baked in-house</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer id="footer" class="footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <span class="brand-mark">●</span>
-                Midnight Brew
-            </div>
-            <p class="footer-meta">
-                123 Lantern Street &middot; Open daily 7am–11pm
-            </p>
-            <p class="footer-copy">© 2026 Midnight Brew. All rights reserved.</p>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Sun Cafe
         </div>
+        <p class="footer-meta">42 Marigold Lane &middot; Open daily 7am–6pm</p>
+        <p class="footer-meta">hello@suncafe.co &middot; (555) 018-2240</p>
+        <p class="footer-copy">© 2026 Sun Cafe. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
